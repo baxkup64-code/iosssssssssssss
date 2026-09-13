@@ -25,12 +25,12 @@ enum Theme {
     enum Font {
         // Text styles intentionally use Dynamic Type instead of fixed point sizes.
         // This keeps the UI legible and consistent across every iPhone size.
-        static func largeTitle() -> SwiftUI.Font { .system(.largeTitle, weight: .bold, design: .rounded) }
-        static func title() -> SwiftUI.Font { .system(.title2, weight: .bold, design: .rounded) }
-        static func heading() -> SwiftUI.Font { .system(.title3, weight: .bold) }
-        static func subheading() -> SwiftUI.Font { .system(.headline, weight: .semibold) }
-        static func body() -> SwiftUI.Font { .system(.body, weight: .regular) }
-        static func caption() -> SwiftUI.Font { .system(.footnote, weight: .medium) }
+        static func largeTitle() -> SwiftUI.Font { .system(.largeTitle, design: .rounded).weight(.bold) }
+        static func title() -> SwiftUI.Font { .system(.title2, design: .rounded).weight(.bold) }
+        static func heading() -> SwiftUI.Font { .system(.title3).weight(.bold) }
+        static func subheading() -> SwiftUI.Font { .system(.headline).weight(.semibold) }
+        static func body() -> SwiftUI.Font { .system(.body).weight(.regular) }
+        static func caption() -> SwiftUI.Font { .system(.footnote).weight(.medium) }
     }
 
     enum Spacing {
